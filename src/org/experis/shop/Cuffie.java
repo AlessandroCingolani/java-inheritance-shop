@@ -11,4 +11,9 @@ public class Cuffie extends Prodotto{
         this.color = color;
         this.isWireless = isWireless;
     }
+
+    @Override
+    public String getAllInfo(){
+        return String.format("Code: %08d \nName: %s \nBrand: %s\nPrice: %.2f\nVat: %.2f\nColor: %s\nWireless: %b", getCode(), getName(),getBrand(),getPrice(),getVat(),color,isWireless);
+    }
 }

@@ -34,7 +34,7 @@ public class Cart {
                         System.out.print("Inch: ");
                         String inch = scan.nextLine();
                         System.out.print("Is smart? ");
-                        boolean isSmart = scan.nextBoolean();
+                        boolean isSmart = Boolean.parseBoolean(scan.nextLine());
                         Televisori television = new Televisori(name,brand,new BigDecimal(price),new BigDecimal(vat),new BigDecimal(inch),isSmart);
                         cart[i] = television;
                     break;
@@ -42,13 +42,18 @@ public class Cart {
                         System.out.print("Color: ");
                         String color = scan.nextLine();
                         System.out.print("Is wireless? ");
-                        boolean isWireless = scan.nextBoolean();
+                        boolean isWireless = Boolean.parseBoolean(scan.nextLine());
                         Cuffie headphone = new Cuffie(name,brand,new BigDecimal(price),new BigDecimal(vat),color,isWireless);
                         cart[i] = headphone;
                     break;
             }
         }
-        System.out.println(Arrays.toString(cart));
+
+        for(Prodotto prodotto : cart ){
+            System.out.println(prodotto.getAllInfo());
+        }
+
+
 
 
         scan.close();
