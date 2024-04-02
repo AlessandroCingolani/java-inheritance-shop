@@ -11,5 +11,4 @@ public class Cuffie extends Prodotto{
         this.color = color;
         this.isWireless = isWireless;
     }
-    //Attributi
 }
