@@ -15,6 +15,6 @@ public class Televisori extends Prodotto{
 
     @Override
     public String getAllInfo(){
-        return String.format("Code: %08d \nName: %s \nBrand: %s\nPrice: %.2f\nVat: %.2f\nInch: %.1f\nSmart: %b", getCode(), getName(),getBrand(),getPrice(),getVat(),inch,isSmart);
+        return String.format("Code: %08d \nName: %s \nBrand: %s\nPrice: %.2f\nVat: %.2f\nInch: %.1f\nSmart: %b\n", getCode(), getName(),getBrand(),getPrice(),getVat(),inch,isSmart);
     }
 }
