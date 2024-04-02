@@ -33,7 +33,6 @@ public class Prodotto {
     }
 
     public BigDecimal getFullPrice() {
-        // price + price * vat
         return price.add(price.multiply(vat)).setScale(2, RoundingMode.HALF_EVEN);
     }
 
@@ -79,12 +78,12 @@ public class Prodotto {
     }
 
 
-
-
     // METODI
     private int generateCode() {
         // logica: genero un numero random di max 8 cifre
         Random randomGenerator = new Random();
         return randomGenerator.nextInt(MAX_CODE);
     }
+
+
 }

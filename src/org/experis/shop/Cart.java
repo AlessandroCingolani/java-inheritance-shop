@@ -6,6 +6,8 @@ import java.util.Scanner;
 public class Cart {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
+        boolean isFedelty = false;
+
         System.out.print("How many products? ");
         int size = Integer.parseInt(scan.nextLine());
         Prodotto[] cart = new Prodotto[size];
@@ -49,10 +51,16 @@ public class Cart {
             }
         }
 
+        System.out.println("----PRODUCTS----");
         for(Prodotto prodotto : cart ){
             System.out.println(prodotto.getAllInfo());
         }
 
+
+        System.out.println("----PRICE----");
+        for (Prodotto prodotto : cart) {
+            System.out.println(prodotto.getName() +  " - Price: " + prodotto.getFullPrice());
+        }
 
 
 
