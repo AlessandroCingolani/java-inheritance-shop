@@ -66,7 +66,7 @@ public class Prodotto {
     }
 
     public String getAllInfo() {
-        return String.format("Code: %08d \nName: %s \nBrand: %s\nPrice: %.2f\nVat: %.2f", code, name,brand,price,vat);
+        return String.format("Code: %08d \nName: %s \nBrand: %s\nPrice: %.2f\nVat: %.2f\n", code, name,brand,price,vat);
     }
 
     public void setPrice(BigDecimal price) {

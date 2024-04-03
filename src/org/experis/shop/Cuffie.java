@@ -14,6 +14,6 @@ public class Cuffie extends Prodotto{
 
     @Override
     public String getAllInfo(){
-        return String.format("Code: %08d \nName: %s \nBrand: %s\nPrice: %.2f\nVat: %.2f\nColor: %s\nWireless: %b", getCode(), getName(),getBrand(),getPrice(),getVat(),color,isWireless);
+        return super.getAllInfo() + String.format("Color: %s\nWireless: %b", color,isWireless);
     }
 }

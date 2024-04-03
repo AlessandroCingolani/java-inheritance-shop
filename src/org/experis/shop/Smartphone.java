@@ -16,6 +16,6 @@ public class Smartphone extends Prodotto {
 
     @Override
     public String getAllInfo(){
-        return String.format("Code: %08d \nName: %s \nBrand: %s\nPrice: %.2f\nVat: %.2f\nImei: %d\nMemory: %s", getCode(), getName(),getBrand(),getPrice(),getVat(),imei,memory);
+        return super.getAllInfo() + String.format("Imei: %d\nMemory: %s", imei,memory);
     }
 }
