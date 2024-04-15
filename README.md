@@ -1,6 +1,6 @@
 Consegna:
 Un prodotto è caratterizzato da:
-codice (numero intero)
+- codice (numero intero)
 - nome
 - marca
 - prezzo
